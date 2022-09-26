@@ -1,0 +1,28 @@
+PODS:
+  - Hero (1.6.1)
+  - Kingfisher (7.3.2)
+  - lottie-ios (3.3.0)
+  - SwiftyJSON (5.0.1)
+
+DEPENDENCIES:
+  - Hero
+  - Kingfisher
+  - lottie-ios
+  - SwiftyJSON
+
+SPEC REPOS:
+  trunk:
+    - Hero
+    - Kingfisher
+    - lottie-ios
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Hero: 215865ba3ae41dd9bb08cd6c60a645529c6fc94b
+  Kingfisher: 0086ad83719761ba9b2cdaf6ef4d5b4878cbae23
+  lottie-ios: 6ac74dcc09904798f59b18cb3075c089d76be9ae
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+
+PODFILE CHECKSUM: 38a521e30f4683aedcbb150069acd4959fbfcdf3
+
+COCOAPODS: 1.11.3
