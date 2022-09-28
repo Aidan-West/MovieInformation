@@ -22,7 +22,7 @@ class MainVC: UIViewController, UISearchBarDelegate {
     enum ProgressKeyFrames: CGFloat {
         
            case start = 100
-           case end = 120
+           case end = 110
        }
     
     override func viewDidLoad() {
