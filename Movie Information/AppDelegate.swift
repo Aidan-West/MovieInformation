@@ -16,11 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        configureWindow(destinationVC: ViewController())
+        configureWindow(destinationVC: MainVC())
         return true
     }
     
-    func configureWindow(destinationVC : ViewController){
+    func configureWindow(destinationVC : MainVC){
         
       
         window = UIWindow(frame: UIScreen.main.bounds)

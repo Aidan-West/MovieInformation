@@ -25,8 +25,7 @@ class MovieCollectionViewCell: UICollectionViewCell {
        contentView.addSubview(rating)
        contentView.addSubview(movieImg)
        
-       title.font = UIFont(name: "Inter-Bold", size: 18)
-       descMovie.font = UIFont(name: "Inter-Light", size: 14)
+      
 
 
    }

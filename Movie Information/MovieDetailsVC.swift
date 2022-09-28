@@ -41,35 +41,35 @@ class MovieDetailsVC: UIViewController {
         title.text = choosenMovie.title
         title.numberOfLines = 4
         title.textAlignment = .center
+        title.font = .systemFont(ofSize: 20)
         title.frame = CGRect(x: 0.1 * screenWidth, y: 0.3 * screenHeight, width: 0.8 * screenWidth, height: 0.4 * screenWidth)
         view.addSubview(title)
-        title.font = UIFont(name: "Inter-Bold", size: 20)
 
         let year = UILabel()
         year.textColor = .black
         year.text = "Movie Year: \(choosenMovie.year)"
         year.numberOfLines = 4
         year.textAlignment = .left
+        year.font = .systemFont(ofSize: 16)
         year.frame = CGRect(x: 0.1 * screenWidth, y: 0.35 * screenHeight, width: 0.8 * screenWidth, height: 0.4 * screenWidth)
         view.addSubview(year)
-        year.font = UIFont(name: "Inter-SemiBold", size: 16)
         
         let rate = UILabel()
         rate.textColor = .black
         rate.text = "Movie Rating: \(choosenMovie.rating)"
         rate.textAlignment = .left
+        rate.font = .systemFont(ofSize: 16)
         rate.frame = CGRect(x: 0.1 * screenWidth, y: 0.4 * screenHeight, width: 0.8 * screenWidth, height: 0.4 * screenWidth)
         view.addSubview(rate)
-        rate.font = UIFont(name: "Inter-SemiBold", size: 16)
         
         let desc = UILabel()
         desc.textColor = .black
         desc.text = choosenMovie.descMovie
         desc.textAlignment = .left
+        desc.font = .systemFont(ofSize: 14)
         desc.frame = CGRect(x: 0.1 * screenWidth, y: 0.5 * screenHeight, width: 0.8 * screenWidth, height: 0.5 * screenWidth)
         view.addSubview(desc)
         desc.numberOfLines = 8
-        desc.font = UIFont(name: "Inter-Regular", size: 14)
 
     }
     @objc func crossBtnClicked(){

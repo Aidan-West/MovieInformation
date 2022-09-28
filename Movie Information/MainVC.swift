@@ -9,7 +9,7 @@ import UIKit
 import Kingfisher
 import Lottie
 
-class ViewController: UIViewController, UISearchBarDelegate {
+class MainVC: UIViewController, UISearchBarDelegate {
    
     var moviesArr = [Movie]()
     var filteredMovieArr = [Movie]()
@@ -103,7 +103,7 @@ class ViewController: UIViewController, UISearchBarDelegate {
         searchBar.tintColor = UIColor(red: 0.675, green: 0.675, blue: 0.675, alpha: 1)
         searchBar.searchTextField.textColor =  .black
         searchBar.searchTextField.backgroundColor = .white
-        searchBar.searchTextField.font = UIFont(name: "Inter-Light", size: 14)
+        searchBar.searchTextField.font = .systemFont(ofSize: 14)
         searchBar.delegate = self
         searchBar.frame = CGRect(x: 0.05 * screenWidth, y: 0.075 * screenHeight, width: 0.9 * screenWidth, height: 50)
         view.addSubview(searchBar)
@@ -148,7 +148,7 @@ class ViewController: UIViewController, UISearchBarDelegate {
                 searchEmptyTitle.textAlignment = .center
                 searchEmptyTitle.frame = CGRect(x: 0.1 * screenWidth, y: 0.35 * screenHeight, width: 0.8 * screenWidth, height: 0.4 * screenWidth)
                 view.addSubview(searchEmptyTitle)
-                searchEmptyTitle.font = UIFont(name: "Inter-Thin", size: 20)
+                searchEmptyTitle.font = .systemFont(ofSize: 20)
                 searchEmptyTitle.isHidden = false
                 
             }
@@ -162,7 +162,7 @@ class ViewController: UIViewController, UISearchBarDelegate {
 
 }
 
-extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension MainVC: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         return filteredMovieArr.count
